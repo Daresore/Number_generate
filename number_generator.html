@@ -31,7 +31,14 @@
 <body style="margin-top: 48vh; height: 100px; display: flex; justify-content: center;  align-items: center">
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
     <div id="numbe" class="number">0</div>
-    <div class="buutton">GENERATE</div>
+    <div class="buutton" onclick="randomize()">GENERATE</div>
 </div>
 </body>
+<script>
+    numberr = 0
+    function randomize() {
+            numberr = Math.floor( Math.random()*99)
+        document.getElementById("numbe").innerHTML = numberr
+        }
+</script>
 </html>
